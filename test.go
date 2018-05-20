@@ -11,26 +11,13 @@ import (
 )
 
 const (  
-  DB_HOST     = "messagedb.cyssztdd4zzm.us-west-2.rds.amazonaws.com"
+  DB_HOST     = "manime.cyssztdd4zzm.us-west-2.rds.amazonaws.com"
   DB_PORT     = 5432
   DB_USER     = "ahnguye"
   DB_PASSWORD = "postgres"
-  DB_NAME     = "messagedb"
+  DB_NAME     = "manime"
 )
 
-type Message struct {
-    Id string `json:"id"`
-    Name string `json:"name"`
-    Time string `json:"time"`
-    Message string `json:"message"`
-    Latitude string `json:"latitude"`
-    Longitude string `json:"longitude"`
-    Views string `json:"views"`
-}
-
-type Messageslice struct {
-    Messages []Message
-}
 
 type MyRouter struct {
 	db *sql.DB

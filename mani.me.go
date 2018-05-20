@@ -37,6 +37,13 @@ func (router *MyRouter) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     return
 }
 
+func writeError(err error) {
+    if err != nil {
+        panic(err)
+    
+    }
+}
+
 func main() {
     fmt.Printf("backend in go\n")
 

@@ -18,6 +18,14 @@ const (
   DB_NAME     = "messagedb"
 )
 
+const (  
+  DB_HOST     = "manime.cyssztdd4zzm.us-west-2.rds.amazonaws.com"
+  DB_PORT     = 5432
+  DB_USER     = "ahnguye"
+  DB_PASSWORD = "postgres"
+  DB_NAME     = "manime"
+)
+
 
 type MyRouter struct {
 	db *sql.DB

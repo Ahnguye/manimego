@@ -10,11 +10,11 @@ import (
 )
 
 const (  
-  DB_HOST     = "manime.cyssztdd4zzm.us-west-2.rds.amazonaws.com"
+  DB_HOST     = "messagedb.cyssztdd4zzm.us-west-2.rds.amazonaws.com"
   DB_PORT     = 5432
   DB_USER     = "ahnguye"
   DB_PASSWORD = "postgres"
-  DB_NAME     = "manime"
+  DB_NAME     = "messagedb"
 )
 
 type MyRouter struct {
